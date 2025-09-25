@@ -4,6 +4,7 @@ import React, { useMemo } from 'react';
 import { PieChart, Pie, Cell, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { BarChart3 } from 'lucide-react';
 import { Holding, PortfolioHistoryPoint } from '@/types/portfolio';
 import { formatCurrency, formatPercentage } from '@/lib/portfolio-calculator';
 
