@@ -202,13 +202,17 @@ export default function CSVUpload({ onDataParsed, isLoading = false }: CSVUpload
         </div>
 
         <div className="text-xs text-gray-500 space-y-1">
-          <p><strong>CSV Format Requirements:</strong></p>
+          <p><strong>CSV Format Requirements for Indian Stocks:</strong></p>
           <ul className="list-disc list-inside space-y-1 ml-2">
-            <li><strong>symbol:</strong> Stock ticker (1-5 letters, e.g., AAPL)</li>
+            <li><strong>symbol:</strong> NSE/BSE stock symbol (1-15 characters, e.g., RELIANCE, TCS, HDFCBANK)</li>
             <li><strong>shares:</strong> Number of shares (positive for buy, negative for sell)</li>
-            <li><strong>price:</strong> Price per share (positive number)</li>
+            <li><strong>price:</strong> Price per share in INR (positive number)</li>
             <li><strong>date:</strong> Trade date (YYYY-MM-DD or MM/DD/YYYY format)</li>
           </ul>
+          <div className="mt-2 p-2 bg-blue-50 rounded-md">
+            <p className="text-blue-800 font-medium text-xs">💡 Indian Stock Examples:</p>
+            <p className="text-blue-700 text-xs">RELIANCE, TCS, HDFCBANK, INFY, HINDUNILVR, ICICIBANK, ITC, BHARTIARTL, SBIN, LT</p>
+          </div>
         </div>
       </CardContent>
     </Card>
