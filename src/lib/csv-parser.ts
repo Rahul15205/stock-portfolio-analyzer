@@ -62,11 +62,11 @@ function validateRow(row: CSVRow, rowNumber: number): ValidatedRow {
       field: 'symbol',
       message: 'Symbol is required'
     });
-  } else if (!/^[A-Z]{1,5}$/.test(symbol)) {
+  } else if (!/^[A-Z0-9&]{1,15}$/.test(symbol)) {
     errors.push({
       row: rowNumber,
       field: 'symbol',
-      message: 'Symbol must be 1-5 uppercase letters'
+      message: 'Symbol must be 1-15 uppercase letters, numbers, or & symbol'
     });
   }
 

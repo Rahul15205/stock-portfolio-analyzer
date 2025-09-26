@@ -415,9 +415,9 @@ export default function Home() {
                           <div>
                             <p className="text-gray-600">Portfolio Value</p>
                             <p className="font-medium">
-                              {new Intl.NumberFormat('en-US', {
+                              {new Intl.NumberFormat('en-IN', {
                                 style: 'currency',
-                                currency: 'USD'
+                                currency: 'INR'
                               }).format(appState.portfolioMetrics.totalValue)}
                             </p>
                           </div>

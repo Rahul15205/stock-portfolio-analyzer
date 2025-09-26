@@ -223,9 +223,9 @@ export function getUniqueSectors(holdings: Holding[]): string[] {
 }
 
 export function formatCurrency(amount: number): string {
-  return new Intl.NumberFormat('en-US', {
+  return new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'USD'
+    currency: 'INR'
   }).format(amount);
 }
 
@@ -234,7 +234,7 @@ export function formatPercentage(value: number, decimalPlaces: number = 2): stri
 }
 
 export function formatNumber(value: number, decimalPlaces: number = 2): string {
-  return new Intl.NumberFormat('en-US', {
+  return new Intl.NumberFormat('en-IN', {
     minimumFractionDigits: decimalPlaces,
     maximumFractionDigits: decimalPlaces
   }).format(value);

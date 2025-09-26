@@ -301,7 +301,7 @@ export default function PortfolioCharts({ holdings, portfolioHistory, isLoading 
                   />
                   <YAxis 
                     tick={{ fontSize: 12 }}
-                    tickFormatter={(value) => formatCurrency(value).replace('$', '$')}
+                    tickFormatter={(value) => formatCurrency(value)}
                   />
                   <Tooltip content={<LineTooltip />} />
                   <Line 
