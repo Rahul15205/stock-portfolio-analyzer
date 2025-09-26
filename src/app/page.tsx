@@ -448,7 +448,7 @@ export default function Home() {
               <p className="mt-1 text-slate-500">Professional investment analysis tools</p>
             </div>
             <div className="mt-4 sm:mt-0 text-xs text-slate-400">
-              <p>© 2024 Portfolio Tracker</p>
+              <p>© 2025 Portfolio Tracker</p>
             </div>
           </div>
         </div>
